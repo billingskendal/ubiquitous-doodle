@@ -1,5 +1,6 @@
 function start()
 {
+    // Kendal Billings
     // Start of the countdown timer.
     var count=10;
 
