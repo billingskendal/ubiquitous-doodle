@@ -1,6 +1,6 @@
 function start()
 {
-    // I need a countdown timer
+    // Start of the countdown timer.
     var count=10;
 
     // The main loop for the timeout function.
@@ -8,7 +8,7 @@ function start()
         setTimeout(function() {
             document.write("Countdown "+ count + "<br>");
         
-            // this is the requested change order. 
+            // There was a change order, and here it is. 
             if(count <= 5) {
                 document.write("Warning, less than 1/2 way to launch, "+ count +" seconds left<br>");
             }
