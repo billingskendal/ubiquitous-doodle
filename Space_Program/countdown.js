@@ -8,13 +8,13 @@ function start()
         setTimeout(function() {
             document.write("Countdown "+ count + "<br>");
         
-            // this is the new stuff for the change order
+            // this is the requested change order. 
             if(count <= 5) {
                 document.write("Warning, less than 1/2 way to launch, "+ count +" seconds left<br>");
             }
             count=count-1;
 
-            //finally the delay
+            //this adds in the delay
             }, 1000*i)
         }
         // alert to play on screen at the completion of the countdown
