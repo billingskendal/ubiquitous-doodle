@@ -12,10 +12,11 @@
         <!--This is the connected javascript code that runs this page's countdown timer. -->
         <script src="countdown.js"></script>
         <!--The linked page below is for the time & date; currently not working.-->
-        <script src="time.js"></script>
+        <script src="toggles.js"></script>
     </head>
 <body>
     <!--The image for the page.-->
+
     <img src="UATspaceLogo.jpeg" alt="UAT SPACE LOGO">
         <br>
         <br>
@@ -29,11 +30,16 @@
         <br>
         <br>
         <br>
-    <button>Start</button><button onclick="start();" class="Buttons">Count Down</button><button>Stop</button>
+        <!--This is the start button. It enables and disables so far.-->
+        <button id="startButton" onclick="start();">Start toggle</button>
+        <!--this controls the countdown button only. Changed "start" to "begin" during last update to avoid conflicts with other toggles.-->
+        <button id=countdownButton onclick="begin();" class="Buttons">Count Down</button>
+        <!--This is the stop button. It enables and disables so far.-->
+        <button id="stopButton" onclick="stop();">Stop toggle</button>
     <br>
     <br>
-    <!--This loads an audio plaer on the screen that allows the user to control a sound. CAUTION: IT IS LOUD.-->
-    <audio controls autoplay loop>
+    <!--This loads an audio player on the screen that allows the user to control a sound. CAUTION: IT IS LOUD, BUT THERE IS A PLAY/PAUSE.-->
+    <audio controls autoplay loop> <!--this does not autoplay, even with "controls" removed.-->
         <source src="us-lab-background.mp3" type="audio/mpeg">
     </audio>
     <!--The script for the alert system.-->

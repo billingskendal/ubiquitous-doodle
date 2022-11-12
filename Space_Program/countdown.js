@@ -1,6 +1,7 @@
-function start()
+function begin()
 {
     // Kendal Billings
+    document.getElementById("countdownButton");
     // Start of the countdown timer.
     var count=10;
 
