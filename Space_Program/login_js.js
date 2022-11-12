@@ -11,7 +11,7 @@ function checkCreds()
     // checking entry info conditions
     entryInfo=badgeNumber+" "+studentName;
     // defining the expected length of the entryInfo
-    if (entryInfo.length >20 || entryInfo.length <5)
+    if (entryInfo.length >20 || entryInfo.length <3)
         {
             document.getElementById("loginStatus").innerHTML="invalid info"
         }
