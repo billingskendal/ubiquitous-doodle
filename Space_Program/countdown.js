@@ -10,7 +10,7 @@ function begin()
         setTimeout(function() {
             document.write("Countdown "+ count + "<br>");
         
-            // There was a change order, and here it is. 
+            // There was a change order from the Admiral, and here it is. 
             if(count <= 5) {
                 document.write("Warning, less than 1/2 way to launch, "+ count +" seconds left<br>");
             }

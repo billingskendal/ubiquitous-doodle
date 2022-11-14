@@ -3,7 +3,7 @@
     <head>
         <!--Efficiency at Mission Control-->
         <!--Mission Control Operator Login-->
-        <!--Change Order Request from the Fleet Admiral-->
+        <!--Change Order Request from the Fleet Admiral located in countdown.js-->
         <title>UAT Space Program</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,12 +13,13 @@
         <script src="countdown.js"></script>
         <!--The linked page below is for the time & date; currently not working.-->
         <script src="toggles.js"></script>
+        <script src="display.js"></script>
     </head>
 <body>
     <!--The image for the page.-->
     <center>
-        <img src="UATspaceLogo.jpeg" alt="UAT SPACE LOGO">
-        <br>
+        <img src="UATspaceLogo.jpeg" alt="UAT SPACE LOGO" align="right">
+        <h2 align="left">Current Time: <span id="time_span"></span></h2>
         <br>
     <h1> UAT Space Program
     </h1>
@@ -30,6 +31,8 @@
         <br>
         <!--This is the start button. It enables and disables so far.-->
         <button id="startButton" onclick="start();">Start toggle</button>
+        <!--Button to display the time.-->
+        <button onclick="display()"; class="button">Get current time</button>
         <!--this controls the countdown button only. Changed "start" to "begin" during last update to avoid conflicts with other toggles.-->
         <button id=countdownButton onclick="begin();" class="Buttons">Count Down</button>
         <!--This is the stop button. It enables and disables so far.-->
@@ -37,13 +40,12 @@
     <br>
     <p>Want to hear what it sounds like to be on a space station? Click below! (ear warning)</p>
     <br>
-    <p>Perhaps you might want to stay awhile and listen to some serene sci fi sounds? Cloes your eyes and relax.</p>
     <!--This loads an audio player on the screen that allows the user to control a sound. CAUTION: IT IS LOUD, BUT THERE IS A PLAY/PAUSE.-->
     <audio controls autoplay loop> <!--this does not autoplay, even with "controls" removed.-->
         <source src="us-lab-background.mp3" type="audio/mpeg">
     </audio>
     <br>
-    <p>Perhaps you might want to stay awhile and listen to some serene sci fi sounds? Cloes your eyes and relax.</p>
+    <p>Perhaps you might want to stay awhile and listen to some serene sci fi sounds? Close your eyes and relax.</p>
     <br>
     <!--Below I embedded a video from YouTube. It is an ambient playlist featuring "space sounds", and is very relaxing to take a moment and imagine yourself in the weightlessness of space. Adrift, million miles from home, yet peaceful. And not at all filled with existential terror and dread. :)-->
     <iframe width="560" height="315" src="https://www.youtube.com/embed/0yD3NkwQIiU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

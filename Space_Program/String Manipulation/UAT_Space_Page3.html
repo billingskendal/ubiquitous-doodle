@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="dataLoader.js"></script>
+    <link href="table.css" rel="stylesheet">
+    <title>Space Table</title>
+</head>
+<body>
+    <!--This is calling a table and defining style.-->
+    <table id="data" border="2" width="70%" class="tableUno">
+        <col style="width:35%">
+        <col style="width:35%">
+        <thead>
+            <!--this defines the font and alignment-->
+            <tr style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                <th align="left">Data Type</th>
+                <th align="left">Reading</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="seconds"><td> Seconds </td><td>10</td></tr>
+            <tr id="latitude"><td> Latitude </td><td> 15</td></tr>
+            <tr id="longitude"><td> Longitude</td><td>20</td></tr>
+            <tr id="gps_altitude"><td>GPS Altitude<td>25</td></tr>
+            <tr id="bmpSensor_altitude"></tr>
+            <tr id="bmpSensor_pressure"></tr>
+            <tr id="bmpSensor_temp"></tr>
+            <tr id="digSensor_temp"></tr>
+            <tr id="cssSensor_temp"></tr>
+            <tr id="cssSensor_eCO2"></tr>
+            <tr id="cssSensor_TVOC"></tr>
+            <tr id="UV"></tr>
+            <tr id="accelX"></tr>
+            <tr id="accelY"></tr>
+            <tr id="accelZ"></tr>
+            <tr id="magneticX"></tr>
+            <tr id="magneticY"></tr>
+            <tr id="magneticZ"></tr>
+            <tr id="gyroX"></tr>
+            <tr id="gyroY"></tr>
+            <tr id="gyroZ"></tr>
+        </tbody>
+    </table>
+
+    <button id="startButton" onclick="loadData();">Start</button>
+    
+</body>
+</html>
